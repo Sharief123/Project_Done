@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project"
+            android:id="@+id/projectTV"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:hint="Project"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/username_background"
+            android:id="@+id/spinnerDataET"
+            android:paddingLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Subject"
+            android:id="@+id/subjectTV"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:textSize="@dimen/_15sp"
+            android:id="@+id/subjectET"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/username_background"
+            android:hint="Subject"
+            android:paddingLeft="@dimen/_10dp"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Start Date"
+            android:id="@+id/startDateTV"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textSize="@dimen/_15sp"
+            android:hint="Start Date"
+            android:id="@+id/startDateET"
+            android:paddingLeft="@dimen/_10dp"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="End Date"
+            android:id="@+id/endDateTV"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textSize="@dimen/_15sp"
+            android:hint="End Date"
+            android:id="@+id/endDateET"
+            android:paddingLeft="@dimen/_10dp"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Description"
+            android:id="@+id/descriptionTV"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="3"
+            android:id="@+id/descriptionET"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:hint="Description"
+            android:paddingLeft="@dimen/_10dp"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:gravity="top|left"
+            android:maxLines="5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:text="Progress Bar"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_70dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_height="@dimen/_70dp">
+
+            <ProgressBar
+                android:layout_width="@dimen/_60dp"
+                android:id="@+id/ProgressBarPB"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@drawable/pb_background"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/pb_drawable"
+                android:layout_height="@dimen/_60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="0%"
+                android:id="@+id/progressBarData"
+                android:textSize="@dimen/_15sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

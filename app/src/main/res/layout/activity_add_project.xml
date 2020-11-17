@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_20dp"
+    android:layout_height="match_parent"
+    tools:context="com.highgo.project.activity.AddProjectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project Name"
+            android:id="@+id/pNameTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/pNameET"
+            android:hint="Project Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_15sp"
+            android:inputType="text"
+            android:background="@drawable/username_background"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project Description"
+            android:id="@+id/pDescriptionTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="3"
+            android:id="@+id/pDescriptionET"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:hint="Project Description"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project Start Date"
+            android:id="@+id/pStartDateTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/pStartDateDP"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:hint="Project Start Date"
+            android:gravity="center_vertical"
+            android:background="@drawable/username_background"
+            android:paddingLeft="@dimen/_10dp"
+            android:calendarViewShown="false"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project End Date"
+            android:id="@+id/pEndDateTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/pEndDateDP"
+            android:background="@drawable/username_background"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:calendarViewShown="false"
+            android:gravity="center_vertical"
+            android:hint="Project End Date"
+            android:layout_marginTop="@dimen/_8dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project Assigned By"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:id="@+id/pAssignedByTV"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textSize="@dimen/_15sp"
+            android:paddingLeft="@dimen/_10dp"
+            android:inputType="text"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:hint="Project Assigned By"
+            android:id="@+id/pAssignedByET"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project Assigned To"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:id="@+id/pAssignedToTV"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textSize="@dimen/_15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_10dp"
+            android:hint="Project Assigned To"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:id="@+id/pAssignedToET"
+            android:layout_height="@dimen/_40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:weightSum="1"
+            android:layout_height="@dimen/_50dp">
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/cancel_background"
+                android:id="@+id/cancelBN"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:textSize="@dimen/_15sp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/_40dp"/>
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/save_background"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:id="@+id/saveBN"
+                android:textSize="@dimen/_15sp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/_40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

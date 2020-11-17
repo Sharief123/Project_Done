@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.highgo.project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.UpdateMeetingActivity"
+            android:parentActivityName=".activity.MeetingDetailsActivity"></activity>
+        <activity
+            android:name=".activity.MeetingDetailsActivity"
+            android:parentActivityName=".activity.MeetingsActivity" />
+        <activity
+            android:name=".activity.UpdateCommentActivity"
+            android:parentActivityName=".activity.CommentDetailsActivity" />
+        <activity
+            android:name=".activity.CommentDetailsActivity"
+            android:parentActivityName=".activity.ListOfCommentsActivity" />
+        <activity
+            android:name=".activity.ListOfCommentsActivity"
+            android:parentActivityName=".activity.DashboardActivity" />
+        <activity
+            android:name=".activity.AddNewMeetingActivity"
+            android:parentActivityName=".activity.MeetingsActivity" />
+        <activity
+            android:name=".activity.MeetingsActivity"
+            android:parentActivityName=".activity.DashboardActivity" />
+        <activity
+            android:name=".activity.ListsOfTasksActivity"
+            android:parentActivityName=".activity.DashboardActivity" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:parentActivityName=".activity.DashboardActivity" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:parentActivityName=".activity.DashboardActivity" />
+        <activity
+            android:name=".activity.UpdateTasksActivity"
+            android:parentActivityName=".activity.TaskDetailsActivity" />
+        <activity
+            android:name=".activity.UpdateProjectActivity"
+            android:parentActivityName=".activity.ProjectDetailsActivity" />
+        <activity
+            android:name=".activity.AddTaskActivity"
+            android:parentActivityName=".activity.ProjectDetailsActivity" />
+        <activity
+            android:name=".activity.TaskDetailsActivity"
+            android:parentActivityName=".activity.ProjectDetailsActivity" />
+        <activity
+            android:name=".activity.ProjectDetailsActivity"
+            android:parentActivityName=".activity.ListOfProjectsActivity" />
+        <activity
+            android:name=".activity.AddProjectActivity"
+            android:parentActivityName=".activity.ListOfProjectsActivity" />
+        <activity
+            android:name=".activity.ListOfProjectsActivity"
+            android:parentActivityName=".activity.DashboardActivity" />
+        <activity android:name=".activity.DashboardActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

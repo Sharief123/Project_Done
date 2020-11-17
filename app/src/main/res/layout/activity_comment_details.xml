@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.highgo.project.activity.CommentDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:id="@+id/projectTV"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Project Name"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:textStyle="bold"
+            android:id="@+id/projectNameTV"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_15sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Created By"
+            android:id="@+id/createdByTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sp"
+            android:id="@+id/nameTV"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Created On"
+            android:id="@+id/createdOnTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="23-10-2002"
+            android:textSize="@dimen/_15sp"
+            android:id="@+id/onDateTV"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:lines="2"
+            android:textColor="@android:color/black"
+            android:maxLines="2"
+            android:minLines="2"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:text="Hello"
+            android:id="@+id/commentSubjectsTV"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:lines="10"
+            android:maxLines="10"
+            android:minLines="10"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:text="Subject Description"
+            android:id="@+id/commentDescriptionTV"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/_40dp">
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.5"
+                android:text="Edit Comment"
+                android:textColor="@color/white"
+                android:id="@+id/editCommentBN"
+                android:background="@drawable/save_background"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/_20dp"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/_20dp"
+                android:drawableLeft="@drawable/ic_create_black_24dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.5"
+                android:text="Delete Comment"
+                android:textColor="@color/white"
+                android:id="@+id/deleteCommentsBN"
+                android:background="@drawable/cancel_background"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/_20dp"
+                android:drawableLeft="@drawable/ic_delete_black_24dp"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/_20dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

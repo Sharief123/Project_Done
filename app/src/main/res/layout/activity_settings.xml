@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.highgo.project.activity.SettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Account"
+        android:id="@+id/accountDetailsTV"
+        android:textSize="@dimen/_18sp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/_10dp"
+        android:id="@+id/lineOneView"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Edit Profile"
+        android:id="@+id/editProfileTV"
+        android:textSize="@dimen/_15sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/_15dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Change Password"
+        android:id="@+id/changePasswordTV"
+        android:textSize="@dimen/_15sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Privacy"
+        android:id="@+id/privacyTV"
+        android:textSize="@dimen/_15sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Notifications"
+        android:id="@+id/notificationTV"
+        android:textSize="@dimen/_18sp"
+        android:drawableLeft="@drawable/ic_tap_and_play_black_24dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/_10dp"
+        android:id="@+id/lineTwoView"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:id="@+id/linearLayoutOne"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20dp"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.5"
+            android:text="Notifications"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/notificationsTV"
+            android:layout_height="wrap_content"/>
+
+        <Switch
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/switchOne"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:id="@+id/linearLayoutTwo"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20dp"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.5"
+            android:text="App Notifications"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/appNotificationsTV"
+            android:layout_height="wrap_content"/>
+
+        <Switch
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/switchTwo"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="More"
+        android:id="@+id/moreTV"
+        android:textSize="@dimen/_18sp"
+        android:drawableLeft="@drawable/ic_library_add_black_24dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/_10dp"
+        android:id="@+id/lineThreeView"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="General"
+        android:id="@+id/generalTV"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/_15sp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Language"
+        android:id="@+id/languageTV"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/_15sp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Country"
+        android:id="@+id/countryTV"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/_15sp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:text="LOG OUT"
+        android:id="@+id/logoutTV"
+        android:textSize="@dimen/_18sp"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

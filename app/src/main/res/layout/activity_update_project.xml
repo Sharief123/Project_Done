@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.highgo.project.activity.UpdateProjectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Project Name"
+        android:id="@+id/projectNameTV"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/_20dp"
+        android:text="Project Management System"
+        android:id="@+id/nameET"
+        android:textSize="@dimen/_15sp"
+        android:paddingLeft="@dimen/_10dp"
+        android:background="@drawable/username_background"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Project Description"
+        android:id="@+id/projectDescriptionTV"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:text="Project System is one of the key modules of SAP to perform project and portfolio management. It helps you to manage the project life cycle starting from structuring to planning, execution, until the project completion."
+        android:id="@+id/descriptionET"
+        android:paddingLeft="@dimen/_10dp"
+        android:minLines="2"
+        android:lines="5"
+        android:background="@drawable/username_background"
+        android:maxLines="5"
+        android:textSize="@dimen/_15sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Project Start Date"
+        android:id="@+id/projectStartDateTV"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:text="23-10-2020"
+        android:layout_marginRight="@dimen/_20dp"
+        android:id="@+id/startDateET"
+        android:textSize="@dimen/_15sp"
+        android:background="@drawable/username_background"
+        android:paddingLeft="@dimen/_10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Project End Date"
+        android:id="@+id/projectEndDateTV"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:text="23-12-2020"
+        android:layout_marginRight="@dimen/_20dp"
+        android:background="@drawable/username_background"
+        android:id="@+id/endDateET"
+        android:textSize="@dimen/_15sp"
+        android:paddingLeft="@dimen/_10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Project Assigned By "
+        android:id="@+id/projectAssignedByTV"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:text="Manager"
+        android:paddingLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:id="@+id/assignedBYET"
+        android:background="@drawable/username_background"
+        android:textSize="@dimen/_15sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Project Assigned To"
+        android:id="@+id/projectAssignedToTV"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:text="Team A"
+        android:layout_marginRight="@dimen/_20dp"
+        android:background="@drawable/username_background"
+        android:id="@+id/assignedToTV"
+        android:textSize="@dimen/_15sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_height="@dimen/_40dp">
+
+        <Button
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:text="Cancel"
+            android:id="@+id/cancelBN"
+            android:background="@drawable/cancel_background"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:text="Update"
+            android:id="@+id/updateBN"
+            android:background="@drawable/save_background"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

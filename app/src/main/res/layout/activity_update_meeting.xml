@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.highgo.project.activity.UpdateMeetingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sp"
+        android:id="@+id/nameTV"
+        android:textColor="@color/dark_green"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:id="@+id/nameET"
+        android:paddingLeft="@dimen/_10dp"
+        android:textSize="@dimen/_15sp"
+        android:background="@drawable/username_background"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:text="Reminder Date"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sp"
+        android:id="@+id/reminderDateTV"
+        android:textColor="@color/dark_green"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:id="@+id/reminderDateET"
+        android:paddingLeft="@dimen/_10dp"
+        android:textSize="@dimen/_15sp"
+        android:background="@drawable/username_background"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:text="Status"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sp"
+        android:id="@+id/statusTV"
+        android:textColor="@color/dark_green"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:id="@+id/statusSpinner"
+        android:paddingLeft="@dimen/_10dp"
+        android:textSize="@dimen/_15sp"
+        android:background="@drawable/username_background"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:text="Description"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sp"
+        android:id="@+id/descriptionTV"
+        android:textColor="@color/dark_green"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:id="@+id/descriptionET"
+        android:lines="6"
+        android:maxLines="6"
+        android:minLines="6"
+        android:paddingLeft="@dimen/_10dp"
+        android:textSize="@dimen/_15sp"
+        android:background="@drawable/username_background"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/_40dp">
+
+        <Button
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.3"
+            android:text="Send"
+            android:textColor="@color/white"
+            android:id="@+id/sendBN"
+            android:background="@drawable/save_background"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/_20dp"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/_5dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.4"
+            android:text="Reset to Default"
+            android:textColor="@color/white"
+            android:id="@+id/resetToDefaultBN"
+            android:background="@drawable/cancel_background"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="0.3"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:id="@+id/BackBN"
+            android:background="@drawable/back_button"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

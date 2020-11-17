@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.highgo.project.activity.AddNewMeetingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Name"
+            android:id="@+id/nameTV"
+            android:textSize="@dimen/_15sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_15sp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:hint="Name"
+            android:textSize="@dimen/_15sp"
+            android:inputType="text"
+            android:paddingLeft="@dimen/_10dp"
+            android:id="@+id/nameET"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Reminder Date"
+            android:id="@+id/reminderDateTV"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:id="@+id/reminderDateET"
+            android:layout_marginTop="@dimen/_8dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:inputType="date"
+            android:hint="Reminder Date"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Due Date"
+            android:id="@+id/dueDateTV"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:id="@+id/dueDateET"
+            android:layout_marginTop="@dimen/_8dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:inputType="date"
+            android:hint="Due Date"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Priority"
+            android:id="@+id/priorityTV"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sp"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:background="@drawable/username_background"
+            android:id="@+id/spinner"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="@dimen/_40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Description"
+            android:id="@+id/descriptionTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="Android runs on a variety of devices that have different screen sizes and pixel densities. The system performs basic scaling and resizing to adapt your user interface to different screens."
+            android:lines="5"
+            android:minLines="1"
+            android:inputType="textMultiLine"
+            android:layout_marginRight="@dimen/_20dp"
+            android:maxLines="5"
+            android:id="@+id/descriptionET"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:padding="@dimen/_5dp"
+            android:background="@drawable/username_background"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:paddingTop="@dimen/_2dp"
+            android:weightSum="1"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="@dimen/_50dp">
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/white"
+                android:id="@+id/addMeetingBN"
+                android:background="@drawable/save_background"
+                android:text="Add Meeting"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:gravity="start|center"
+                android:textAllCaps="false"
+                android:paddingLeft="@dimen/_10dp"
+                android:drawableLeft="@drawable/ic_add_black_24dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/white"
+                android:id="@+id/resetToDefaultBN"
+                android:background="@drawable/cancel_background"
+                android:text="ReSet to Default"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

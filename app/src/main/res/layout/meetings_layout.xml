@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/_5dp"
+    app:cardCornerRadius="@dimen/_5dp"
+    android:layout_marginRight="@dimen/_5dp"
+    android:layout_marginTop="@dimen/_5dp"
+    android:layout_marginBottom="@dimen/_5dp"
+    android:layout_height="110dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="305dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/_5dp"
+            android:id="@+id/linearLayoutFive"
+            android:layout_below="@id/linearLayoutFour"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/_0dp"
+                android:text="Meetings Description"
+                android:layout_weight="0.4"
+                android:textSize="@dimen/_12sp"
+                android:id="@+id/meetingDescriptionTV"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="@dimen/_0dp"
+                android:layout_marginTop="@dimen/_2dp"
+                android:text="Meeting Description"
+                android:textStyle="bold"
+                android:id="@+id/mDescriptionTV"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_12sp"
+                android:layout_weight="0.6"
+                android:lines="2"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:maxLines="2"
+                android:minLines="2"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:id="@+id/linearLayoutOne"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/_12sp"
+                android:id="@+id/projectTV"
+                android:text="Project"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:text="Project One"
+                android:id="@+id/mProjectTV"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.5"
+            android:id="@+id/linearLayoutThree"
+            android:layout_toRightOf="@id/linearLayoutTwo"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_below="@id/linearLayoutOne"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_12sp"
+                android:text="ReSubmission Date"
+                android:id="@+id/reSubmissionDateTV"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:text="12-12-2020"
+                android:textStyle="bold"
+                android:id="@+id/mReSubmissionDateTV"
+                android:textSize="@dimen/_12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:id="@+id/linearLayoutTwo"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_below="@id/linearLayoutOne"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:textSize="@dimen/_12sp"
+                android:text="Date"
+                android:id="@+id/meetingDateTV"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:text="23-10-2020"
+                android:paddingLeft="@dimen/_10dp"
+                android:textStyle="bold"
+                android:id="@+id/mDateTV"
+                android:textSize="@dimen/_12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_below="@id/linearLayoutThree"
+            android:layout_marginTop="@dimen/_5dp"
+            android:id="@+id/linearLayoutFour"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/_12sp"
+                android:text="Assigned"
+                android:textStyle="bold"
+                android:id="@+id/assignedTV"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:text="Admins A"
+                android:textStyle="bold"
+                android:id="@+id/adminsTV"
+                android:textSize="@dimen/_12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/_50dp">
+
+            <ProgressBar
+                android:layout_width="@dimen/_40dp"
+                android:indeterminate="false"
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:background="@drawable/pb_background"
+                android:progressDrawable="@drawable/pb_drawable"
+                android:layout_height="@dimen/_40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="80%"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sp"
+                android:id="@+id/progressDataTV"
+                android:textColor="@android:color/darker_gray"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

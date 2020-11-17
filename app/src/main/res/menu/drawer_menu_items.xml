@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/homeItem"/>
+
+    <item
+        android:title="Projects"
+        android:icon="@drawable/pro"
+        android:id="@+id/projectsItem"/>
+
+    <item
+        android:title="Tasks"
+        android:icon="@drawable/tasks"
+        android:id="@+id/projectTasksItem"/>
+
+    <item
+        android:title="Tasks on Hold"
+        android:icon="@drawable/tonhold"
+        android:id="@+id/tasksOnHoldItem"/>
+
+    <item
+        android:title="Completed Projects"
+        android:icon="@drawable/cmpltedpro"
+        android:id="@+id/completedProjectsItem"/>
+
+    <item
+        android:title="Projects on Hold"
+        android:icon="@drawable/onhold"
+        android:id="@+id/projectsOnHoldItem"/>
+
+    <item
+        android:title="All Projects"
+        android:icon="@drawable/allpro"
+        android:id="@+id/allProjectsItem"/>
+
+    <item
+        android:title="Meetings"
+        android:icon="@drawable/m2"
+        android:id="@+id/meetingsItem"/>
+
+    <item
+        android:title="Create a Comment"
+        android:id="@+id/createACommentItem"
+        android:icon="@drawable/ic_comment_black_24dp"/>
+
+    <item
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Settings"
+        android:id="@+id/settingsItem"/>
+
+
+</menu>

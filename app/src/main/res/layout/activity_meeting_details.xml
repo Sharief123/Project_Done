@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.highgo.project.activity.MeetingDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Assigned"
+            android:id="@+id/assignedTV"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:lines="4"
+            android:id="@+id/assignedValuesTV"
+            android:maxLines="4"
+            android:minLines="3"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Date"
+            android:id="@+id/dateTV"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textSize="@dimen/_15sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/dateValueTV"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="ReSubmission Date"
+            android:id="@+id/resubmissionDateTV"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/reSubmissiondDateValueTV"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Status"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/_15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/statusValueTV"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_15sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Description"
+            android:id="@+id/descriptionTV"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:lines="6"
+            android:id="@+id/descriptionValueTV"
+            android:maxLines="6"
+            android:minLines="6"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_height="@dimen/_40dp">
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:text="To edit"
+                android:textColor="@color/white"
+                android:id="@+id/toEditBN"
+                android:background="@drawable/save_background"
+                android:textAllCaps="false"
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/_20dp"
+                android:drawableLeft="@drawable/ic_create_black_24dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.3"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:text="Clear"
+                android:id="@+id/clearBN"
+                android:textColor="@color/white"
+                android:background="@drawable/cancel_background"
+                android:textAllCaps="false"
+                android:gravity="start|center"
+                android:paddingLeft="@dimen/_20dp"
+                android:drawableLeft="@drawable/ic_delete_black_24dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="0.3"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:text="Save"
+                android:id="@+id/saveBN"
+                android:textColor="@color/white"
+                android:background="@drawable/save_background"
+                android:textAllCaps="false"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

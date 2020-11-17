@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.highgo.project.activity.TaskDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Task Name"
+            android:id="@+id/taskNameTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Development of Screens"
+            android:id="@+id/tnameTV"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Task Description"
+            android:id="@+id/taskDescriptionTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Android runs on a variety of devices that have different screen sizes and pixel densities. The system performs basic scaling and resizing to adapt your user interface to different screens."
+            android:lines="5"
+            android:minLines="1"
+            android:layout_marginRight="@dimen/_20dp"
+            android:maxLines="5"
+            android:id="@+id/tDescriptionTV"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Task Start Date"
+            android:id="@+id/taskStartDateTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="23-10-2020"
+            android:id="@+id/tStartDateTV"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Task End Date"
+            android:id="@+id/taskEndDateTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="24-10-2020"
+            android:id="@+id/tEndDateTV"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Task Assigned By"
+            android:id="@+id/taskAssignedByTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Team Lead"
+            android:id="@+id/teamLeadTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Task Assigned To"
+            android:id="@+id/taskAssignedToTV"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/dark_green"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Sherry"
+            android:id="@+id/sherryTV"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:weightSum="1"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/_50dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:text="Back"
+                android:layout_weight="0.5"
+                android:id="@+id/BackBN"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/cancel_background"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/_40dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:id="@+id/updateBN"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/save_background"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/_40dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:id="@+id/saveBN"
+            android:background="@drawable/save_background"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sp"
+            android:layout_height="@dimen/_40dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
